@@ -21,7 +21,7 @@ public class Window2 extends JFrame {
 	private JTextField textField_1;
 	private JTextField tfPost;
 	private JTextField textField_3;
-	//private TwitterAccount Cesar = new TwitterAccount();
+	private TwitterAccount Cesar = new TwitterAccount();
 	
 	public Window2() {
 		setBounds(100, 100, 399, 464);
@@ -36,6 +36,8 @@ public class Window2 extends JFrame {
 		contentPane.add(tfFollow);
 		tfFollow.setColumns(10);
 		
+		//This button was to use the GroupComponent class
+		//To keep groups and users associated with that group together
 		JButton btnFollow = new JButton("<<");
 		btnFollow.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -60,10 +62,12 @@ public class Window2 extends JFrame {
 		contentPane.add(tfPost);
 		tfPost.setColumns(10);
 		
+		//Was trying to use the Observer Pattern here.
+		//Could not make it work
 		JButton btnPostTweet = new JButton("<<");
 		btnPostTweet.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//Cesar.notifyFollowers(tfPost.getText());
+				Cesar.notifyFollowers(tfPost.getText());
 			}
 		});
 		btnPostTweet.setBounds(186, 216, 74, 39);

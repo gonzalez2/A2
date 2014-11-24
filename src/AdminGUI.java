@@ -16,7 +16,6 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 import java.awt.Font;
 
-
 public class AdminGUI {
 
 	JFrame frame;
@@ -31,7 +30,6 @@ public class AdminGUI {
 		}
 		
 		return instance;
-		
 	}
 	    void initialize() {
 	    	frame = new JFrame();
@@ -61,7 +59,6 @@ public class AdminGUI {
 			frame.getContentPane().add(tfGroup);
 			tfGroup.setColumns(10);
 
-
 			JTree treeWorld = new JTree();
 			treeWorld.setModel(new DefaultTreeModel(
 					new DefaultMutableTreeNode("Tree View") {
@@ -85,7 +82,8 @@ public class AdminGUI {
 			frame.getContentPane().add(imessage);	
 			treeWorld.setBounds(10, 13, 169, 346);
 			frame.getContentPane().add(treeWorld);
-
+			
+			//This Button adds a user name ----------------------------------------------------------------
 			JButton addUserB = new JButton("<<");
 			addUserB.addActionListener(new ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +100,7 @@ public class AdminGUI {
 			addUserB.setBounds(189, 31, 89, 23);
 			frame.getContentPane().add(addUserB);
 
+			//This Button add a group Folder---------------------------------------------------------------
 			JButton addGroupB = new JButton("<<");
 			addGroupB.addActionListener(new ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +118,7 @@ public class AdminGUI {
 				}
 			});
 
+			//This Button deletes a user of Group Folder-----------------------------------------------------
 			JButton DeleteButton = new JButton("Delete");
 			DeleteButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
@@ -174,6 +174,5 @@ public class AdminGUI {
 			JButton PosPercent = new JButton("Positive Percent");
 			PosPercent.setBounds(346, 244, 138, 44);
 			frame.getContentPane().add(PosPercent);
-
 	}
 }
