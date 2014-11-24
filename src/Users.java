@@ -1,8 +1,8 @@
 
 public class Users extends GroupComponent {
-	
+
 	String usersname;
-	
+
 	public Users(String newUsername){
 		usersname = newUsername;
 	}

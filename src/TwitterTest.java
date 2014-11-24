@@ -1,6 +1,6 @@
 public class TwitterTest {
-	
-	 // Start the application.
+
+	// Start the application.
 	public static void main(String[] args) {
 		AdminGUI start = AdminGUI.getInstance();
 		start.initialize();

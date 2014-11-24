@@ -15,13 +15,13 @@ public class UserGroups extends GroupComponent {
 		groupName = newGroupName;
 		groupId = newgroupId;
 	}
-	
+
 	public String getGroupName(){return groupName;}
-	
+
 	public void add(GroupComponent newGroupComponent){
 		GroupComponents.add(newGroupComponent);
 	}
-	
+
 	public void remove(GroupComponent newGroupComponent){
 		GroupComponents.remove(newGroupComponent);
 	}
@@ -30,6 +30,8 @@ public class UserGroups extends GroupComponent {
 		return (GroupComponent)GroupComponents.get(componentIndex);
 	}
 
+	//This method is suppose to display folders name
+	//and everyone is the folder
 	public void displayGroupInfo() {
 
 		System.out.println(getGroupName()+ " " + groupId + "\n");
