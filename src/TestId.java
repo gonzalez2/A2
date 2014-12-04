@@ -15,9 +15,11 @@ public class TestId  {
 		id.add("cesar fd");
 		id.add("Cesar131");
 		id.add("Cesar1423 Gon");
-		test.doesitContain(id, "Cesar14231");
+		test.doesitContain(id, "Cesar131");
 		id.add("Cesar1_423-Gon");
 
+		//Send the list and prints out all the id that 
+		//are good id and all that are bad.
 		List<String> idVerified = test.SingleId(id);
 		System.out.println("---------------------------------------");
 		test.Validator(idVerified);

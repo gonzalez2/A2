@@ -15,6 +15,5 @@ public class LastUpdatedUser extends GroupComponent {
 	public void setLastUpdated(Users lastUserUpdated){
 		
 		lastUpdated = lastUserUpdated;
-		
 	}
 }

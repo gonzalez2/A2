@@ -12,7 +12,7 @@ public class idValidate {
 	public idValidate(){
 		pattern = Pattern.compile(USERNAME_PATTERN); 
 	}
-
+	//Check to see if id matches the criteria
 	public boolean validate(final String username){
 		matcher = pattern.matcher(username);
 		return matcher.matches();
