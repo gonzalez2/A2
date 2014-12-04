@@ -11,9 +11,14 @@ public class UserGroups extends GroupComponent {
 	private String groupName;
 	private String groupId;
 
+	//Since this class extends GroupComponent I can use the 
+	//protected variable by storing the time and printing out the creation time
+	//when ever a new group is created.
 	public UserGroups(String newGroupName,String newgroupId){
 		groupName = newGroupName;
 		groupId = newgroupId;
+		creationTime = System.currentTimeMillis();
+		System.out.println(creationTime);
 	}
 
 	public String getGroupName(){return groupName;}
